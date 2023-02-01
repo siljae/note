@@ -79,11 +79,11 @@
       
   SQL 프로그래밍
     스토어드 프로시저
-      delimiter //
+      delimiter $$
       create procedure 함수명()
       begin
         select * from 테이블명;
-      end //
+      end $$
       delimiter ;
       call 함수명();
       
@@ -102,5 +102,8 @@
       while 조건식 do
         sql 문장들
       end while;
+      iterate[레이블] : 지정한 레이블로 가서 계속 진행 -- 자바의 continue문
+      leave[레이블] : 지정한 레이블을 빠져나갑니다 -- 자바의 break문
+      
       
       
