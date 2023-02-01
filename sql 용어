@@ -77,3 +77,30 @@
       자체 조인(self join) : 하나의 테이블 안에서 조인 -- 거의 안쓰기는 하는데 알아만 두셈
       
       
+  SQL 프로그래밍
+    스토어드 프로시저
+      delimiter //
+      create procedure 함수명()
+      begin
+        select * from 테이블명;
+      end //
+      delimiter ;
+      call 함수명();
+      
+    if문
+      declare  : 변수 선언 -- declare 변수명 변수타입;
+      into : selcet로 조회한 데이터를 변수에 담으라는 예약어
+      
+    case문 : 자바의 switch문과 비슷하나 조금 다르다 //매치법 말고 순차적 조건식
+      case
+        when
+        when
+        when
+      end
+      
+    while문
+      while 조건식 do
+        sql 문장들
+      end while;
+      
+      
