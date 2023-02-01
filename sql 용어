@@ -1,0 +1,50 @@
+2023 02 01
+  정수
+  tinyint
+  smallint
+  int
+  bigint
+  
+  unsigned : 값의 범위가 0부터 시작되는 예약어 -- ex) tinyint 는 -128 ~ 127 의 범위를 갖고 있는데 tinyint unsigned 를 사용하면 0 ~ 255
+  
+  문자
+  char
+  varchar
+  
+  대량의 데이터형식
+  text
+  longtext
+  blob
+  longblob
+  
+  실수
+  float
+  double
+  
+  날짜  
+  date : 날짜만 저장, YYYY-MM-DD 형식
+  time : 시간만 저장, HH:MM:SS 형식
+  datetime : 날짜 및 시간을 저장, YYYY-MM-DD HH:MM:SS 형식
+  
+  변수
+  set @변수이름 = 변수값 -- 변수의 선언 및 값 입력
+  select @변수이름; -- 변수의 값 출력
+  
+  prepare : 실행하지 않고 sql문만 준비
+  execute : 실행
+  using : 사용 ~
+  
+  형변환 : 명시적인 변환, 암시적인(자동) 변환
+  cast() -- ex) cast(avg(price) as singed) from 테이블이름
+  convert() : --ex) convert(avg(price), signed) from 테이블이름 //cast()랑 또옥같은데 인자값에 스타일을 줄 수 있다 
+    데이터형식
+    char
+    signed : - 붙이는거 //-부터 시작
+    unsinged : - 생략하고 //0부터
+    date
+    time
+    datetime
+    
+  concat : 문자열 붙이는거 -- '이응' + '이응' 같은거 // concat('aa', 'dd','gg') 콤마(,) 가 + 의 기능을 한다
+  
+  
