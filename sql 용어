@@ -50,8 +50,8 @@
   조인(join)
     내부 조인 : 가장 많이씀 보통 조인! 하면 다 내부조인을 지칭 -- select 테이블하는 곳에 데이터가 있어야 내부조인하는 테이블에서 데이터를 가져올 수 있다
     일대다(one to many) 관계 : PK-FK 관계
-    기본키(primary key, PK)
-    왜래키(foreign key, KF)
+    기본키(primary key, PK) : primary key(열이름)
+    왜래키(foreign key, KF) : foreign key(열이름) references 연결할테이블명(열이름)
     ex) select * from 기준테이블a
             inner join 조인할테이블b
             on a.열이름 = b.열이름
@@ -105,5 +105,20 @@
       iterate[레이블] : 지정한 레이블로 가서 계속 진행 -- 자바의 continue문
       leave[레이블] : 지정한 레이블을 빠져나갑니다 -- 자바의 break문
       
-      
-      
+    동적SQL
+      prepare  
+      execute 
+      deallocate prepare
+
+2023 02 02
+  테이블 : 2차원구조 (열과행, x와y) 열 : 컬럼(column),필드(field) 행 : 로우(row), 레코드(record)
+  백틱
+  제약조건
+    기본키(primary key) : 중복되지않고 비어있지 않음 (= unique + not null)
+    외래키(foreign key)
+    고유키(unique)
+    체크
+    기본값
+    null
+  
+ 
