@@ -114,11 +114,16 @@
   테이블 : 2차원구조 (열과행, x와y) 열 : 컬럼(column),필드(field) 행 : 로우(row), 레코드(record)
   백틱
   제약조건
-    기본키(primary key) : 중복되지않고 비어있지 않음 (= unique + not null)
+    기본키(primary key) : 중복되지않고 비어있지 않음 (= unique + not null) // 기본키로 처리된 값을 변경하는 미친짓은 하지마라
     외래키(foreign key)
     고유키(unique)
     체크
     기본값
     null
-  
- 
+    constraint : 제약사항
+    on update cascade
+    on delete cascade
+  뷰
+    단순뷰
+    복합뷰
+    
