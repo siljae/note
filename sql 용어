@@ -129,6 +129,29 @@
     
 2023 02 03
     인덱스
-      클러스터형 : PK, 사전, 내용이 정렬된다
-      보조형 : UK, 책 뒤의 찾아보기, 추가적으로 내용이 삽입이 된다
+      클러스터형 : PK, 사전, (기본키를 기준으로)내용이 정렬된다
+      보조형 : UK, 책 뒤의 찾아보기, 추가적으로 내용이 삽입이 된다,정렬안됨
+      clustered index
+      secondary index
+      show index
+      alter table 테이블명
+        add constraint
+        primary key(열이름);
       
+      내부 작동 원리
+        노드(node)
+        루트 노드
+        리프 노드: mysql에서 페이지라고 부름
+        페이지(page) : 최소의 저장 단위, 16Kbtye(16374bute)크기 -- 데이터1건만 입력해도 1개의 페이지가 필요
+        
+      실제 사용
+        create index
+        drop index
+        show table status
+        show table status like
+        create index
+        단순 보조 인덱스(simple secindary index) : 중복 허용
+        고유 보조 인덱스(unique secondary index) : 중복 허용 안함
+        analyze table : 생성된 인덱스를 실제로 적용시킴
+        create unique index
+        
