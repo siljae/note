@@ -24,4 +24,13 @@
   인덱스 확장
   인덱스 머지
   인덱스 머지 - 교집합(index_merge_intersection)
-  
+  인덱스 머지 - 합집합(index_merge_union)
+  인덱스 머지 - 정렬 후 합집합(index_merge_sor_union)
+  세미 조인(semijoin)
+  테이블 풀-아웃(Table Pull-out)
+
+조인 최적화 알고리즘
+  Exhaustive 검색 알고리즘
+  Greedy 검색 알고리즘
+
+코스트 모델
