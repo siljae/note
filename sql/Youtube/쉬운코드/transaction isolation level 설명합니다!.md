@@ -8,6 +8,7 @@ https://youtu.be/bLLarZTrebU?si=RIKbFDKMzMFRWL9O
 
 #### 격리 레벨(Isolation level)
   - 일부 이상한 현상은 허용하는 몇 가지 level을 만들어서 사용자가 필요에 따라서 적절하게 선택할 수 있도록 하자
+  - 애플리케이션 설계자는 isolation level을 통해 전체 처리량(throughput)과 데이터 일관성 사이에서 어느 정도 거래(trade)를 할 수 있다
 
 | Isolation Level     | Dirty Read | Non-repeatable Read | Phantom Read |
 |---------------------|------------|----------------------|--------------|
