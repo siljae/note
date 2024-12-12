@@ -30,16 +30,31 @@ https://youtu.be/bLLarZTrebU?si=RIKbFDKMzMFRWL9O
    
 #### 1995년 isolation level을 비판하는 논문에서 나온 추가 이상 현상
 
-  - **Drity write**: commit 안된 데이터를 write 함
+  - **Dirty write 확장판**: commit 안된 데이터를 write 함
+
+![Dirty write](./images/Dirty-write.png)
+
   - **Lost Update**: 업데이트를 덮어 씀
+
+![Lost Update](./images/Lost-update.png)
   - **Drity read 확장판**: abort가 발생하지 않아도 Drity read가 될 수 있다
+
+![Dirty read 확장판](./images/Dirty-read-확장판.png)
   - **Read skew**: inconsistent한 데이터 읽기
+
+![Read skew](./images/Read-skew.png)
   - **Write skew**: inconsistent한 데이터 쓰기
+
+![Write skew](./images/Write-skew.png)
   - **Phantom read 확장판**: 읽지않은 데이터의 값이 달라짐
+
+![Phantom read 확장판](./images/Phantom-read-확장판.png)
 
 #### Snapshot isolation
   - Transactional 시작 전에 commit된 데이터만 보임
   - 같은 데이터는 First-committer 한 Transactional이 이김
+
+![Snapshot isolation](./images/Snapshot-isolation.png)
 
 #### 실무에서 Isolation level
   - **MySQL(innoDB)**: 표준SQL과 동일
