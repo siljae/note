@@ -2,8 +2,14 @@ https://youtu.be/bLLarZTrebU?si=RIKbFDKMzMFRWL9O
 
 #### 이상한 현상
   - **Dirty read**: commit 되지 않은 변화를 읽음
+
+![Dirty read](./images/Dirty-read.png)
   - **Non-repeatable read(Fuzzy read)**: 같은 데이터의 값이 달라짐
+
+![Non repeatable read](./images/Non-repeatable-read.png)
   - **Phantom read**: 없던 데이터가 생김
+
+![Phantom read](./images/Phantom-read.png)
   - 이러 이상한 현상들이 모두 발생하지 않게 만들 수 있지만 그러면 제약사항이 많아져서 동시 처리 가능한 트랜잭션 수가 줄어들어 결국 DB의 전체 처리량(throughput)이 하락하게 된다
 
 #### 격리 레벨(Isolation level)
